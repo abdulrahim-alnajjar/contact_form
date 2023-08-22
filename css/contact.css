@@ -1,0 +1,119 @@
+/** Global */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #035eff;
+}
+
+/** Responsability*/
+.container {
+  padding: 0px 1rem;
+  margin: 0px auto;
+}
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
+}
+
+/** Form */
+form {
+  width: 90%;
+  margin: 10% auto 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0px 0px 15px -5px #000;
+  border-radius: 10px;
+  background: #fff;
+}
+@media (max-width: 576px) {
+  form {
+    width: 100%;
+  }
+}
+form .form-title {
+  font-size: 40px;
+  font-weight: bold;
+  margin: 2rem auto 1rem;
+}
+
+/* INPUTS */
+form .form-input {
+  display: flex;
+  align-items: center;
+  margin: 1rem;
+  width: 70%;
+  border-radius: 3rem;
+  border: 1px solid #bfd6ff;
+  overflow: hidden;
+}
+@media screen and (max-width: 576px) {
+  form .form-input {
+    margin: 0.5rem;
+  }
+}
+form .form-input svg {
+  fill: gray;
+  margin: 0.5rem 0.5rem 0.5rem 1rem;
+}
+form .form-input input {
+  padding: 1rem 1rem 1rem 0;
+  flex: 1;
+}
+form .form-input:has(input:focus) {
+  box-shadow: inset 0px 0px 15px -5px #035eff;
+}
+
+/* submit */
+form .submit {
+  width: 35%;
+  margin: 1rem;
+}
+form .submit input {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 3rem;
+  background: #035eff;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.4s;
+}
+form .submit input:hover {
+  background: #0040b0;
+}
+
+/** Error message */
+
+.error-message {
+  text-transform: capitalize;
+  font-size: 0.825rem;
+  color: #ff4c4c;
+}
+
+/** Send Success message */
+.send-succeded {
+  color: green;
+  text-transform: capitalize;
+  font-weight: bold;
+  font-size: 1.25rem;
+}
